@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let year of years">
+    <button (click)="showChampion(year)">{{year}}</button>
+  </li>
+</ul>
+<router-outlet></router-outlet>
