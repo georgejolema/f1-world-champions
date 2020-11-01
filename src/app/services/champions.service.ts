@@ -1,58 +1,45 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { Driver, RaceList, Constructor } from '../model/Races';
-
-
-function toHttpResponse({limit, offset, total, RaceTable}): RaceList {
-  function buildUser(driver): Driver {
-    return {
-      code: driver.code,
-      dateOfBirth: driver.dateOfBirth,
-      id: driver.driverId,
-      name: driver.givenName,
-      nationality: driver.nationality,
-      permanentNumber: driver.permanentNumber,
-    };
-  }
-
-  function buildContructor(constructor): Constructor {
-    return {
-      id: constructor.constructorId,
-      name: constructor.name,
-      nationality: constructor.nationality,
-    };
-  }
-  return {
-    limit,
-    offset,
-    total,
-    items: RaceTable.Races.map((race) => ({
-      season: race.season,
-      round: race.round,
-      time: race.time,
-      date: race.date,
-      result: {
-        driver: buildUser(race.Results[0].Driver),
-        constructor: buildContructor(race.Results[0].Constructor),
-      }
-    })),
-  };
-}
+import { Injectable, Optional, Inject, OnDestroy } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
+import { DEFAULT_SEASON_LIST, F1_SEASON_LIST_TOKEN } from '../constants';
+import { RaceList } from '../model/Races';
 
 @Injectable()
-export class ChampionsService {
-  private url = '/api/f1';
+export class ChampionsService implements OnDestroy {
+  private store: BehaviorSubject<number>;
 
-  getChampions(year): Observable<RaceList> {
-    return this.http.get(`${this.url}/${year}/results/1.json`)
-      .pipe(
-        map((res: any) => res.MRData),
-        map(toHttpResponse));
+  public champions: Observable<RaceList>;
+
+  private getChampions(season: number): Observable<RaceList> {
+    return this.http.get(`/api/f1/${season}/results/1.json`)
+      .pipe(map((res: any) => RaceList.toHttpResponse(res.MRData)));
   }
 
-  constructor(private http: HttpClient) {
-
+  selectYear(season: number): void {
+    this.store.next(season);
   }
+
+  get seasons(): Array<number> {
+    return this.seasonsConfig;
+  }
+
+  ngOnDestroy(): void {
+    this.store.complete();
+  }
+
+  constructor(
+    private http: HttpClient,
+    @Optional()
+    @Inject(F1_SEASON_LIST_TOKEN)
+    private seasonsConfig: Array<number> | undefined
+    ) {
+      if (!this.seasonsConfig) {
+        this.seasonsConfig = DEFAULT_SEASON_LIST;
+      }
+
+      this.store = new BehaviorSubject<number>(this.seasonsConfig[0]);
+
+      this.champions = this.store.pipe(switchMap((year: number) => this.getChampions(year)));
+    }
 }

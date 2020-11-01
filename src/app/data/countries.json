@@ -1,0 +1,1017 @@
+[
+  { "cca2": "AD", "name": "Andorra", "cca3": "AND", "nationality": "Andorran" },
+  {
+    "cca2": "AE",
+    "name": "United Arab Emirates",
+    "cca3": "ARE",
+    "nationality": "Emirati"
+  },
+  {
+    "cca2": "AF",
+    "name": "Afghanistan",
+    "cca3": "AFG",
+    "nationality": "Afghan"
+  },
+  {
+    "cca2": "AG",
+    "name": "Antigua and Barbuda",
+    "cca3": "ATG",
+    "nationality": "Antiguan"
+  },
+  {
+    "cca2": "AI",
+    "name": "Anguilla",
+    "cca3": "AIA",
+    "nationality": "Anguillian"
+  },
+  { "cca2": "AL", "name": "Albania", "cca3": "ALB", "nationality": "Albanian" },
+  { "cca2": "AM", "name": "Armenia", "cca3": "ARM", "nationality": "Armenian" },
+  { "cca2": "AO", "name": "Angola", "cca3": "AGO", "nationality": "Angolan" },
+  { "cca2": "AQ", "name": "Antarctica", "cca3": "ATA", "nationality": "?" },
+  {
+    "cca2": "AR",
+    "name": "Argentina",
+    "cca3": "ARG",
+    "nationality": "Argentinean"
+  },
+  {
+    "cca2": "AS",
+    "name": "American Samoa",
+    "cca3": "ASM",
+    "nationality": "American Samoan"
+  },
+  { "cca2": "AT", "name": "Austria", "cca3": "AUT", "nationality": "Austrian" },
+  {
+    "cca2": "AU",
+    "name": "Australia",
+    "cca3": "AUS",
+    "nationality": "Australian"
+  },
+  { "cca2": "AW", "name": "Aruba", "cca3": "ABW", "nationality": "Aruban" },
+  {
+    "cca2": "AX",
+    "name": "Åland Islands",
+    "cca3": "ALA",
+    "nationality": "Swedish"
+  },
+  {
+    "cca2": "AZ",
+    "name": "Azerbaijan",
+    "cca3": "AZE",
+    "nationality": "Azerbaijani"
+  },
+  {
+    "cca2": "BA",
+    "name": "Bosnia and Herzegovina",
+    "cca3": "BIH",
+    "nationality": "Bosnian"
+  },
+  {
+    "cca2": "BB",
+    "name": "Barbados",
+    "cca3": "BRB",
+    "nationality": "Barbadian"
+  },
+  {
+    "cca2": "BD",
+    "name": "Bangladesh",
+    "cca3": "BGD",
+    "nationality": "Bangladeshi"
+  },
+  { "cca2": "BE", "name": "Belgium", "cca3": "BEL", "nationality": "Belgian" },
+  {
+    "cca2": "BF",
+    "name": "Burkina Faso",
+    "cca3": "BFA",
+    "nationality": "Burkinabe"
+  },
+  {
+    "cca2": "BG",
+    "name": "Bulgaria",
+    "cca3": "BGR",
+    "nationality": "Bulgarian"
+  },
+  { "cca2": "BH", "name": "Bahrain", "cca3": "BHR", "nationality": "Bahraini" },
+  {
+    "cca2": "BI",
+    "name": "Burundi",
+    "cca3": "BDI",
+    "nationality": "Burundian"
+  },
+  { "cca2": "BJ", "name": "Benin", "cca3": "BEN", "nationality": "Beninese" },
+  {
+    "cca2": "BL",
+    "name": "Saint Barthélemy",
+    "cca3": "BLM",
+    "nationality": "Saint Barthélemy Islander"
+  },
+  {
+    "cca2": "BM",
+    "name": "Bermuda",
+    "cca3": "BMU",
+    "nationality": "Bermudian"
+  },
+  { "cca2": "BN", "name": "Brunei", "cca3": "BRN", "nationality": "Bruneian" },
+  { "cca2": "BO", "name": "Bolivia", "cca3": "BOL", "nationality": "Bolivian" },
+  { "cca2": "BR", "name": "Brazil", "cca3": "BRA", "nationality": "Brazilian" },
+  { "cca2": "BS", "name": "Bahamas", "cca3": "BHS", "nationality": "Bahamian" },
+  { "cca2": "BT", "name": "Bhutan", "cca3": "BTN", "nationality": "Bhutanese" },
+  { "cca2": "BV", "name": "Bouvet Island", "cca3": "BVT", "nationality": "?" },
+  {
+    "cca2": "BW",
+    "name": "Botswana",
+    "cca3": "BWA",
+    "nationality": "Motswana"
+  },
+  {
+    "cca2": "BY",
+    "name": "Belarus",
+    "cca3": "BLR",
+    "nationality": "Belarusian"
+  },
+  { "cca2": "BZ", "name": "Belize", "cca3": "BLZ", "nationality": "Belizean" },
+  { "cca2": "CA", "name": "Canada", "cca3": "CAN", "nationality": "Canadian" },
+  {
+    "cca2": "CC",
+    "name": "Cocos [Keeling] Islands",
+    "cca3": "CCK",
+    "nationality": "Cocos Islander"
+  },
+  {
+    "cca2": "CD",
+    "name": "Congo - Kinshasa",
+    "cca3": "COD",
+    "nationality": "Congolese"
+  },
+  {
+    "cca2": "CF",
+    "name": "Central African Republic",
+    "cca3": "CAF",
+    "nationality": "Central African"
+  },
+  {
+    "cca2": "CG",
+    "name": "Congo - Brazzaville",
+    "cca3": "COG",
+    "nationality": "Congolese"
+  },
+  {
+    "cca2": "CH",
+    "name": "Switzerland",
+    "cca3": "CHE",
+    "nationality": "Swiss"
+  },
+  {
+    "cca2": "CI",
+    "name": "Côte d’Ivoire",
+    "cca3": "CIV",
+    "nationality": "Ivorian"
+  },
+  {
+    "cca2": "CK",
+    "name": "Cook Islands",
+    "cca3": "COK",
+    "nationality": "Cook Islander"
+  },
+  { "cca2": "CL", "name": "Chile", "cca3": "CHL", "nationality": "Chilean" },
+  {
+    "cca2": "CM",
+    "name": "Cameroon",
+    "cca3": "CMR",
+    "nationality": "Cameroonian"
+  },
+  { "cca2": "CN", "name": "China", "cca3": "CHN", "nationality": "Chinese" },
+  {
+    "cca2": "CO",
+    "name": "Colombia",
+    "cca3": "COL",
+    "nationality": "Colombian"
+  },
+  {
+    "cca2": "CR",
+    "name": "Costa Rica",
+    "cca3": "CRI",
+    "nationality": "Costa Rican"
+  },
+  {
+    "cca2": "CS",
+    "name": "Serbia and Montenegro",
+    "cca3": "SCG",
+    "nationality": "Montenegrins"
+  },
+  {
+    "cca2": "CT",
+    "name": "Canton and Enderbury Islands",
+    "cca3": "CTE",
+    "nationality": "?"
+  },
+  { "cca2": "CU", "name": "Cuba", "cca3": "CUB", "nationality": "Cuban" },
+  {
+    "cca2": "CV",
+    "name": "Cape Verde",
+    "cca3": "CPV",
+    "nationality": "Cape Verdian"
+  },
+  {
+    "cca2": "CX",
+    "name": "Christmas Island",
+    "cca3": "CXR",
+    "nationality": "Christmas Island"
+  },
+  { "cca2": "CY", "name": "Cyprus", "cca3": "CYP", "nationality": "Cypriot" },
+  {
+    "cca2": "CZ",
+    "name": "Czech Republic",
+    "cca3": "CZE",
+    "nationality": "Czech"
+  },
+  { "cca2": "DE", "name": "Germany", "cca3": "DEU", "nationality": "German" },
+  {
+    "cca2": "DJ",
+    "name": "Djibouti",
+    "cca3": "DJI",
+    "nationality": "Djibouti"
+  },
+  { "cca2": "DK", "name": "Denmark", "cca3": "DNK", "nationality": "Danish" },
+  {
+    "cca2": "DM",
+    "name": "Dominica",
+    "cca3": "DMA",
+    "nationality": "Dominican"
+  },
+  {
+    "cca2": "DO",
+    "name": "Dominican Republic",
+    "cca3": "DOM",
+    "nationality": "Dominican"
+  },
+  { "cca2": "DZ", "name": "Algeria", "cca3": "DZA", "nationality": "Algerian" },
+  {
+    "cca2": "EC",
+    "name": "Ecuador",
+    "cca3": "ECU",
+    "nationality": "Ecuadorean"
+  },
+  { "cca2": "EE", "name": "Estonia", "cca3": "EST", "nationality": "Estonian" },
+  { "cca2": "EG", "name": "Egypt", "cca3": "EGY", "nationality": "Egyptian" },
+  {
+    "cca2": "EH",
+    "name": "Western Sahara",
+    "cca3": "ESH",
+    "nationality": "Sahrawi"
+  },
+  { "cca2": "ER", "name": "Eritrea", "cca3": "ERI", "nationality": "Eritrean" },
+  { "cca2": "ES", "name": "Spain", "cca3": "ESP", "nationality": "Spanish" },
+  {
+    "cca2": "ET",
+    "name": "Ethiopia",
+    "cca3": "ETH",
+    "nationality": "Ethiopian"
+  },
+  { "cca2": "FI", "name": "Finland", "cca3": "FIN", "nationality": "Finnish" },
+  { "cca2": "FJ", "name": "Fiji", "cca3": "FJI", "nationality": "Fijian" },
+  {
+    "cca2": "FK",
+    "name": "Falkland Islands",
+    "cca3": "FLK",
+    "nationality": "Falkland Islander"
+  },
+  {
+    "cca2": "FM",
+    "name": "Micronesia",
+    "cca3": "FSM",
+    "nationality": "Micronesian"
+  },
+  {
+    "cca2": "FO",
+    "name": "Faroe Islands",
+    "cca3": "FRO",
+    "nationality": "Faroese"
+  },
+  {
+    "cca2": "FQ",
+    "name": "French Southern and Antarctic Territories",
+    "cca3": "ATF",
+    "nationality": "?"
+  },
+  { "cca2": "FR", "name": "France", "cca3": "FRA", "nationality": "French" },
+  {
+    "cca2": "FX",
+    "name": "Metropolitan France",
+    "cca3": "FXX",
+    "nationality": "?"
+  },
+  { "cca2": "GA", "name": "Gabon", "cca3": "GAB", "nationality": "Gabonese" },
+  {
+    "cca2": "GB",
+    "name": "United Kingdom",
+    "cca3": "GBR",
+    "nationality": "British"
+  },
+  {
+    "cca2": "GD",
+    "name": "Grenada",
+    "cca3": "GRD",
+    "nationality": "Grenadian"
+  },
+  { "cca2": "GE", "name": "Georgia", "cca3": "GEO", "nationality": "Georgian" },
+  { "cca2": "GF", "name": "French Guiana", "cca3": "GUF", "nationality": "?" },
+  {
+    "cca2": "GG",
+    "name": "Guernsey",
+    "cca3": "GGY",
+    "nationality": "Channel Islander"
+  },
+  { "cca2": "GH", "name": "Ghana", "cca3": "GHA", "nationality": "Ghanaian" },
+  {
+    "cca2": "GI",
+    "name": "Gibraltar",
+    "cca3": "GIB",
+    "nationality": "Gibraltar"
+  },
+  {
+    "cca2": "GL",
+    "name": "Greenland",
+    "cca3": "GRL",
+    "nationality": "Greenlandic"
+  },
+  { "cca2": "GM", "name": "Gambia", "cca3": "GMB", "nationality": "Gambian" },
+  { "cca2": "GN", "name": "Guinea", "cca3": "GIN", "nationality": "Guinean" },
+  {
+    "cca2": "GP",
+    "name": "Guadeloupe",
+    "cca3": "GLP",
+    "nationality": "Guadeloupian"
+  },
+  {
+    "cca2": "GQ",
+    "name": "Equatorial Guinea",
+    "cca3": "GNQ",
+    "nationality": "Equatorial Guinean"
+  },
+  { "cca2": "GR", "name": "Greece", "cca3": "GRC", "nationality": "Greek" },
+  {
+    "cca2": "GS",
+    "name": "South Georgia and the South Sandwich Islands",
+    "cca3": "SGS",
+    "nationality": "South Georgia and the South Sandwich Islander"
+  },
+  {
+    "cca2": "GT",
+    "name": "Guatemala",
+    "cca3": "GTM",
+    "nationality": "Guatemalan"
+  },
+  { "cca2": "GU", "name": "Guam", "cca3": "GUM", "nationality": "Guamanian" },
+  {
+    "cca2": "GW",
+    "name": "Guinea-Bissau",
+    "cca3": "GNB",
+    "nationality": "Guinea-Bissauan"
+  },
+  { "cca2": "GY", "name": "Guyana", "cca3": "GUY", "nationality": "Guyanese" },
+  {
+    "cca2": "HK",
+    "name": "Hong Kong SAR China",
+    "cca3": "HKG",
+    "nationality": "Chinese"
+  },
+  {
+    "cca2": "HM",
+    "name": "Heard Island and McDonald Islands",
+    "cca3": "HMD",
+    "nationality": "Heard and McDonald Islander"
+  },
+  {
+    "cca2": "HN",
+    "name": "Honduras",
+    "cca3": "HND",
+    "nationality": "Honduran"
+  },
+  { "cca2": "HR", "name": "Croatia", "cca3": "HRV", "nationality": "Croatian" },
+  { "cca2": "HT", "name": "Haiti", "cca3": "HTI", "nationality": "Haitian" },
+  {
+    "cca2": "HU",
+    "name": "Hungary",
+    "cca3": "HUN",
+    "nationality": "Hungarian"
+  },
+  {
+    "cca2": "ID",
+    "name": "Indonesia",
+    "cca3": "IDN",
+    "nationality": "Indonesian"
+  },
+  { "cca2": "IE", "name": "Ireland", "cca3": "IRL", "nationality": "Irish" },
+  { "cca2": "IL", "name": "Israel", "cca3": "ISR", "nationality": "Israeli" },
+  { "cca2": "IM", "name": "Isle of Man", "cca3": "IMN", "nationality": "Manx" },
+  { "cca2": "IN", "name": "India", "cca3": "IND", "nationality": "Indian" },
+  {
+    "cca2": "IO",
+    "name": "British Indian Ocean Territory",
+    "cca3": "IOT",
+    "nationality": "Indian"
+  },
+  { "cca2": "IQ", "name": "Iraq", "cca3": "IRQ", "nationality": "Iraqi" },
+  { "cca2": "IR", "name": "Iran", "cca3": "IRN", "nationality": "Iranian" },
+  {
+    "cca2": "IS",
+    "name": "Iceland",
+    "cca3": "ISL",
+    "nationality": "Icelander"
+  },
+  { "cca2": "IT", "name": "Italy", "cca3": "ITA", "nationality": "Italian" },
+  {
+    "cca2": "JE",
+    "name": "Jersey",
+    "cca3": "JEY",
+    "nationality": "Channel Islander"
+  },
+  { "cca2": "JM", "name": "Jamaica", "cca3": "JAM", "nationality": "Jamaican" },
+  { "cca2": "JO", "name": "Jordan", "cca3": "JOR", "nationality": "Jordanian" },
+  { "cca2": "JP", "name": "Japan", "cca3": "JPN", "nationality": "Japanese" },
+  {
+    "cca2": "JT",
+    "name": "Johnston Island",
+    "cca3": "JTN",
+    "nationality": "?"
+  },
+  { "cca2": "KE", "name": "Kenya", "cca3": "KEN", "nationality": "Kenyan" },
+  {
+    "cca2": "KG",
+    "name": "Kyrgyzstan",
+    "cca3": "KGZ",
+    "nationality": "Kirghiz"
+  },
+  {
+    "cca2": "KH",
+    "name": "Cambodia",
+    "cca3": "KHM",
+    "nationality": "Cambodian"
+  },
+  {
+    "cca2": "KI",
+    "name": "Kiribati",
+    "cca3": "KIR",
+    "nationality": "I-Kiribati"
+  },
+  { "cca2": "KM", "name": "Comoros", "cca3": "COM", "nationality": "Comoran" },
+  {
+    "cca2": "KN",
+    "name": "Saint Kitts and Nevis",
+    "cca3": "KNA",
+    "nationality": "Kittian and Nevisian"
+  },
+  {
+    "cca2": "KP",
+    "name": "North Korea",
+    "cca3": "PRK",
+    "nationality": "North Korean"
+  },
+  {
+    "cca2": "KR",
+    "name": "South Korea",
+    "cca3": "KOR",
+    "nationality": "South Korean"
+  },
+  { "cca2": "KW", "name": "Kuwait", "cca3": "KWT", "nationality": "Kuwaiti" },
+  {
+    "cca2": "KY",
+    "name": "Cayman Islands",
+    "cca3": "CYM",
+    "nationality": "Caymanian"
+  },
+  {
+    "cca2": "KZ",
+    "name": "Kazakhstan",
+    "cca3": "KAZ",
+    "nationality": "Kazakhstani"
+  },
+  { "cca2": "LA", "name": "Laos", "cca3": "LAO", "nationality": "Laotian" },
+  { "cca2": "LB", "name": "Lebanon", "cca3": "LBN", "nationality": "Lebanese" },
+  {
+    "cca2": "LC",
+    "name": "Saint Lucia",
+    "cca3": "LCA",
+    "nationality": "Saint Lucian"
+  },
+  {
+    "cca2": "LI",
+    "name": "Liechtenstein",
+    "cca3": "LIE",
+    "nationality": "Liechtensteiner"
+  },
+  {
+    "cca2": "LK",
+    "name": "Sri Lanka",
+    "cca3": "LKA",
+    "nationality": "Sri Lankan"
+  },
+  { "cca2": "LR", "name": "Liberia", "cca3": "LBR", "nationality": "Liberian" },
+  { "cca2": "LS", "name": "Lesotho", "cca3": "LSO", "nationality": "Mosotho" },
+  {
+    "cca2": "LT",
+    "name": "Lithuania",
+    "cca3": "LTU",
+    "nationality": "Lithuanian"
+  },
+  {
+    "cca2": "LU",
+    "name": "Luxembourg",
+    "cca3": "LUX",
+    "nationality": "Luxembourger"
+  },
+  { "cca2": "LV", "name": "Latvia", "cca3": "LVA", "nationality": "Latvian" },
+  { "cca2": "LY", "name": "Libya", "cca3": "LBY", "nationality": "Libyan" },
+  { "cca2": "MA", "name": "Morocco", "cca3": "MAR", "nationality": "Moroccan" },
+  {
+    "cca2": "MC",
+    "name": "Monaco",
+    "cca3": "MCO",
+    "nationality": "Monegasque"
+  },
+  { "cca2": "MD", "name": "Moldova", "cca3": "MDA", "nationality": "Moldovan" },
+  {
+    "cca2": "ME",
+    "name": "Montenegro",
+    "cca3": "MNE",
+    "nationality": "Montenegrin"
+  },
+  {
+    "cca2": "MF",
+    "name": "Saint Martin",
+    "cca3": "MAF",
+    "nationality": "Saint Martin Islander"
+  },
+  {
+    "cca2": "MG",
+    "name": "Madagascar",
+    "cca3": "MDG",
+    "nationality": "Malagasy"
+  },
+  {
+    "cca2": "MH",
+    "name": "Marshall Islands",
+    "cca3": "MHL",
+    "nationality": "Marshallese"
+  },
+  {
+    "cca2": "MI",
+    "name": "Midway Islands",
+    "cca3": "NULL",
+    "nationality": "NULL"
+  },
+  {
+    "cca2": "MK",
+    "name": "Macedonia",
+    "cca3": "MKD",
+    "nationality": "Macedonian"
+  },
+  { "cca2": "ML", "name": "Mali", "cca3": "MLI", "nationality": "Malian" },
+  {
+    "cca2": "MM",
+    "name": "Myanmar [Burma]",
+    "cca3": "MMR",
+    "nationality": "Myanmar"
+  },
+  {
+    "cca2": "MN",
+    "name": "Mongolia",
+    "cca3": "MNG",
+    "nationality": "Mongolian"
+  },
+  {
+    "cca2": "MO",
+    "name": "Macau SAR China",
+    "cca3": "MAC",
+    "nationality": "Chinese"
+  },
+  {
+    "cca2": "MP",
+    "name": "Northern Mariana Islands",
+    "cca3": "MNP",
+    "nationality": "American"
+  },
+  {
+    "cca2": "MQ",
+    "name": "Martinique",
+    "cca3": "MTQ",
+    "nationality": "French"
+  },
+  {
+    "cca2": "MR",
+    "name": "Mauritania",
+    "cca3": "MRT",
+    "nationality": "Mauritanian"
+  },
+  {
+    "cca2": "MS",
+    "name": "Montserrat",
+    "cca3": "MSR",
+    "nationality": "Montserratian"
+  },
+  { "cca2": "MT", "name": "Malta", "cca3": "MLT", "nationality": "Maltese" },
+  {
+    "cca2": "MU",
+    "name": "Mauritius",
+    "cca3": "MUS",
+    "nationality": "Mauritian"
+  },
+  {
+    "cca2": "MV",
+    "name": "Maldives",
+    "cca3": "MDV",
+    "nationality": "Maldivan"
+  },
+  { "cca2": "MW", "name": "Malawi", "cca3": "MWI", "nationality": "Malawian" },
+  { "cca2": "MX", "name": "Mexico", "cca3": "MEX", "nationality": "Mexican" },
+  {
+    "cca2": "MY",
+    "name": "Malaysia",
+    "cca3": "MYS",
+    "nationality": "Malaysian"
+  },
+  {
+    "cca2": "MZ",
+    "name": "Mozambique",
+    "cca3": "MOZ",
+    "nationality": "Mozambican"
+  },
+  { "cca2": "NA", "name": "Namibia", "cca3": "NAM", "nationality": "Namibian" },
+  {
+    "cca2": "NC",
+    "name": "New Caledonia",
+    "cca3": "NCL",
+    "nationality": "New Caledonian"
+  },
+  { "cca2": "NE", "name": "Niger", "cca3": "NER", "nationality": "Nigerian" },
+  {
+    "cca2": "NF",
+    "name": "Norfolk Island",
+    "cca3": "NFK",
+    "nationality": "Norfolk Islander"
+  },
+  { "cca2": "NG", "name": "Nigeria", "cca3": "NGA", "nationality": "Nigerian" },
+  {
+    "cca2": "NI",
+    "name": "Nicaragua",
+    "cca3": "NIC",
+    "nationality": "Nicaraguan"
+  },
+  {
+    "cca2": "NL",
+    "name": "Netherlands",
+    "cca3": "NLD",
+    "nationality": "Dutch"
+  },
+  { "cca2": "NO", "name": "Norway", "cca3": "NOR", "nationality": "Norwegian" },
+  { "cca2": "NP", "name": "Nepal", "cca3": "NPL", "nationality": "Nepalese" },
+  {
+    "cca2": "NQ",
+    "name": "Dronning Maud Land",
+    "cca3": "ATN",
+    "nationality": "?"
+  },
+  { "cca2": "NR", "name": "Nauru", "cca3": "NRU", "nationality": "Nauruan" },
+  { "cca2": "NT", "name": "Neutral Zone", "cca3": "NTZ", "nationality": "?" },
+  { "cca2": "NU", "name": "Niue", "cca3": "NIU", "nationality": "Niuean" },
+  {
+    "cca2": "NZ",
+    "name": "New Zealand",
+    "cca3": "NZL",
+    "nationality": "New Zealander"
+  },
+  { "cca2": "OM", "name": "Oman", "cca3": "OMN", "nationality": "Omani" },
+  {
+    "cca2": "PA",
+    "name": "Panama",
+    "cca3": "PAN",
+    "nationality": "Panamanian"
+  },
+  {
+    "cca2": "PC",
+    "name": "Pacific Islands Trust Territory",
+    "cca3": "PCI",
+    "nationality": "?"
+  },
+  { "cca2": "PE", "name": "Peru", "cca3": "PER", "nationality": "Peruvian" },
+  {
+    "cca2": "PF",
+    "name": "French Polynesia",
+    "cca3": "PYF",
+    "nationality": "French Polynesian"
+  },
+  {
+    "cca2": "PG",
+    "name": "Papua New Guinea",
+    "cca3": "PNG",
+    "nationality": "Papua New Guinean"
+  },
+  {
+    "cca2": "PH",
+    "name": "Philippines",
+    "cca3": "PHL",
+    "nationality": "Filipino"
+  },
+  {
+    "cca2": "PK",
+    "name": "Pakistan",
+    "cca3": "PAK",
+    "nationality": "Pakistani"
+  },
+  { "cca2": "PL", "name": "Poland", "cca3": "POL", "nationality": "Polish" },
+  {
+    "cca2": "PM",
+    "name": "Saint Pierre and Miquelon",
+    "cca3": "SPM",
+    "nationality": "French"
+  },
+  {
+    "cca2": "PN",
+    "name": "Pitcairn Islands",
+    "cca3": "PCN",
+    "nationality": "Pitcairn Islander"
+  },
+  {
+    "cca2": "PR",
+    "name": "Puerto Rico",
+    "cca3": "PRI",
+    "nationality": "Puerto Rican"
+  },
+  {
+    "cca2": "PS",
+    "name": "Palestinian Territories",
+    "cca3": "PSE",
+    "nationality": "Palestinian"
+  },
+  {
+    "cca2": "PT",
+    "name": "Portugal",
+    "cca3": "PRT",
+    "nationality": "Portuguese"
+  },
+  {
+    "cca2": "PU",
+    "name": "U.S. Miscellaneous Pacific Islands",
+    "cca3": "PUS",
+    "nationality": "?"
+  },
+  { "cca2": "PW", "name": "Palau", "cca3": "PLW", "nationality": "Palauan" },
+  {
+    "cca2": "PY",
+    "name": "Paraguay",
+    "cca3": "PRY",
+    "nationality": "Paraguayan"
+  },
+  {
+    "cca2": "PZ",
+    "name": "Panama Canal Zone",
+    "cca3": "PCZ",
+    "nationality": "?"
+  },
+  { "cca2": "QA", "name": "Qatar", "cca3": "QAT", "nationality": "Qatari" },
+  { "cca2": "RE", "name": "Réunion", "cca3": "REU", "nationality": "French" },
+  { "cca2": "RO", "name": "Romania", "cca3": "ROU", "nationality": "Romanian" },
+  { "cca2": "RS", "name": "Serbia", "cca3": "SRB", "nationality": "Serbian" },
+  { "cca2": "RU", "name": "Russia", "cca3": "RUS", "nationality": "Russian" },
+  { "cca2": "RW", "name": "Rwanda", "cca3": "RWA", "nationality": "Rwandan" },
+  {
+    "cca2": "SA",
+    "name": "Saudi Arabia",
+    "cca3": "SAU",
+    "nationality": "Saudi Arabian"
+  },
+  {
+    "cca2": "SB",
+    "name": "Solomon Islands",
+    "cca3": "SLB",
+    "nationality": "Solomon Islander"
+  },
+  {
+    "cca2": "SC",
+    "name": "Seychelles",
+    "cca3": "SYC",
+    "nationality": "Seychellois"
+  },
+  { "cca2": "SD", "name": "Sudan", "cca3": "SDN", "nationality": "Sudanese" },
+  { "cca2": "SE", "name": "Sweden", "cca3": "SWE", "nationality": "Swedish" },
+  {
+    "cca2": "SG",
+    "name": "Singapore",
+    "cca3": "SGP",
+    "nationality": "Singaporean"
+  },
+  {
+    "cca2": "SH",
+    "name": "Saint Helena",
+    "cca3": "SHN",
+    "nationality": "Saint Helenian"
+  },
+  { "cca2": "SI", "name": "Slovenia", "cca3": "SVN", "nationality": "Slovene" },
+  {
+    "cca2": "SJ",
+    "name": "Svalbard and Jan Mayen",
+    "cca3": "SJM",
+    "nationality": "Norwegian"
+  },
+  { "cca2": "SK", "name": "Slovakia", "cca3": "SVK", "nationality": "Slovak" },
+  {
+    "cca2": "SL",
+    "name": "Sierra Leone",
+    "cca3": "SLE",
+    "nationality": "Sierra Leonean"
+  },
+  {
+    "cca2": "SM",
+    "name": "San Marino",
+    "cca3": "SMR",
+    "nationality": "Sammarinese"
+  },
+  {
+    "cca2": "SN",
+    "name": "Senegal",
+    "cca3": "SEN",
+    "nationality": "Senegalese"
+  },
+  { "cca2": "SO", "name": "Somalia", "cca3": "SOM", "nationality": "Somali" },
+  {
+    "cca2": "SR",
+    "name": "Suriname",
+    "cca3": "SUR",
+    "nationality": "Surinamer"
+  },
+  {
+    "cca2": "ST",
+    "name": "São Tomé and Príncipe",
+    "cca3": "STP",
+    "nationality": "Sao Tomean"
+  },
+  {
+    "cca2": "SU",
+    "name": "Union of Soviet Socialist Republics",
+    "cca3": "?",
+    "nationality": "?"
+  },
+  {
+    "cca2": "SV",
+    "name": "El Salvador",
+    "cca3": "SLV",
+    "nationality": "Salvadoran"
+  },
+  { "cca2": "SY", "name": "Syria", "cca3": "SYR", "nationality": "Syrian" },
+  { "cca2": "SZ", "name": "Swaziland", "cca3": "SWZ", "nationality": "Swazi" },
+  {
+    "cca2": "TC",
+    "name": "Turks and Caicos Islands",
+    "cca3": "TCA",
+    "nationality": "Turks and Caicos Islander"
+  },
+  { "cca2": "TD", "name": "Chad", "cca3": "TCD", "nationality": "Chadian" },
+  {
+    "cca2": "TF",
+    "name": "French Southern Territories",
+    "cca3": "ATF",
+    "nationality": "French"
+  },
+  { "cca2": "TG", "name": "Togo", "cca3": "TGO", "nationality": "Togolese" },
+  { "cca2": "TH", "name": "Thailand", "cca3": "THA", "nationality": "Thai" },
+  {
+    "cca2": "TJ",
+    "name": "Tajikistan",
+    "cca3": "TJK",
+    "nationality": "Tadzhik"
+  },
+  {
+    "cca2": "TK",
+    "name": "Tokelau",
+    "cca3": "TKL",
+    "nationality": "Tokelauan"
+  },
+  {
+    "cca2": "TL",
+    "name": "Timor-Leste",
+    "cca3": "TLS",
+    "nationality": "East Timorese"
+  },
+  {
+    "cca2": "TM",
+    "name": "Turkmenistan",
+    "cca3": "TKM",
+    "nationality": "Turkmen"
+  },
+  { "cca2": "TN", "name": "Tunisia", "cca3": "TUN", "nationality": "Tunisian" },
+  { "cca2": "TO", "name": "Tonga", "cca3": "TON", "nationality": "Tongan" },
+  { "cca2": "TR", "name": "Turkey", "cca3": "TUR", "nationality": "Turkish" },
+  {
+    "cca2": "TT",
+    "name": "Trinidad and Tobago",
+    "cca3": "TTO",
+    "nationality": "Trinidadian"
+  },
+  { "cca2": "TV", "name": "Tuvalu", "cca3": "TUV", "nationality": "Tuvaluan" },
+  { "cca2": "TW", "name": "Taiwan", "cca3": "TWN", "nationality": "Taiwanese" },
+  {
+    "cca2": "TZ",
+    "name": "Tanzania",
+    "cca3": "TZA",
+    "nationality": "Tanzanian"
+  },
+  {
+    "cca2": "UA",
+    "name": "Ukraine",
+    "cca3": "UKR",
+    "nationality": "Ukrainian"
+  },
+  { "cca2": "UG", "name": "Uganda", "cca3": "UGA", "nationality": "Ugandan" },
+  {
+    "cca2": "UM",
+    "name": "U.S. Minor Outlying Islands",
+    "cca3": "UMI",
+    "nationality": "American"
+  },
+  {
+    "cca2": "US",
+    "name": "United States",
+    "cca3": "USA",
+    "nationality": "American"
+  },
+  {
+    "cca2": "UY",
+    "name": "Uruguay",
+    "cca3": "URY",
+    "nationality": "Uruguayan"
+  },
+  {
+    "cca2": "UZ",
+    "name": "Uzbekistan",
+    "cca3": "UZB",
+    "nationality": "Uzbekistani"
+  },
+  {
+    "cca2": "VA",
+    "name": "Vatican City",
+    "cca3": "VAT",
+    "nationality": "Italian"
+  },
+  {
+    "cca2": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "cca3": "VCT",
+    "nationality": "Saint Vincentian"
+  },
+  { "cca2": "VD", "name": "North Vietnam", "cca3": "VDR", "nationality": "?" },
+  {
+    "cca2": "VE",
+    "name": "Venezuela",
+    "cca3": "VEN",
+    "nationality": "Venezuelan"
+  },
+  {
+    "cca2": "VG",
+    "name": "British Virgin Islands",
+    "cca3": "VGB",
+    "nationality": "Virgin Islander"
+  },
+  {
+    "cca2": "VI",
+    "name": "U.S. Virgin Islands",
+    "cca3": "VIR",
+    "nationality": "Virgin Islander"
+  },
+  {
+    "cca2": "VN",
+    "name": "Vietnam",
+    "cca3": "VNM",
+    "nationality": "Vietnamese"
+  },
+  {
+    "cca2": "VU",
+    "name": "Vanuatu",
+    "cca3": "VUT",
+    "nationality": "Ni-Vanuatu"
+  },
+  {
+    "cca2": "WF",
+    "name": "Wallis and Futuna",
+    "cca3": "WLF",
+    "nationality": "Wallis and Futuna Islander"
+  },
+  { "cca2": "WK", "name": "Wake Island", "cca3": "WAK", "nationality": "?" },
+  { "cca2": "WS", "name": "Samoa", "cca3": "WSM", "nationality": "Samoan" },
+  { "cca2": "YE", "name": "Yemen", "cca3": "YEM", "nationality": "Yemeni" },
+  { "cca2": "YT", "name": "Mayotte", "cca3": "MYT", "nationality": "French" },
+  {
+    "cca2": "ZA",
+    "name": "South Africa",
+    "cca3": "ZAF",
+    "nationality": "South African"
+  },
+  { "cca2": "ZM", "name": "Zambia", "cca3": "ZMB", "nationality": "Zambian" },
+  {
+    "cca2": "ZW",
+    "name": "Zimbabwe",
+    "cca3": "ZWE",
+    "nationality": "Zimbabwean"
+  },
+  { "cca2": "" }
+]
