@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex mb-3">
+      <h5 class="card-title">{{race.name}}</h5>
+    </div>
+
+    <div class="mr-4">
+      <div>
+        <label>Country:</label>
+        <span class="font-weight-bold ml-1">{{race.country}}</span>
+      </div>
+      <div>
+        <label>Locality:</label>
+        <span class="font-weight-bold ml-1">{{race.locality}}</span>
+      </div>
+      <div>
+        <label>Date:</label>
+        <span class="font-weight-bold ml-1">{{race.date}}</span>
+      </div>
+      <div>
+        <label>Round:</label>
+        <span class="font-weight-bold ml-1">{{race.round}}</span>
+      </div>
+    </div>
+
+    <button class="btn btn-outline-primary" (click)="showDetails=!showDetails">
+      <f1-flag [nationality]="race.winner.driver.nationality"></f1-flag>
+      <span class="px-1">{{race.winner.driver.name}}</span>
+      <fa-icon [icon]="faTrophy"></fa-icon>
+    </button>
+    <div [ngbCollapse]="showDetails" class="p-3">
+      <f1-result [result]="race.winner"></f1-result>
+    </div>
+  </div>
+</div>

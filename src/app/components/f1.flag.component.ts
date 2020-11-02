@@ -4,11 +4,12 @@ import countries from '../data/countries.json';
 
 @Component({
   selector: 'f1-flag',
-  templateUrl: 'flag.component.html',
-  styleUrls: ['./flag.component.scss'],
+  templateUrl: 'f1.flag.component.html',
+  styleUrls: ['./f1.flag.component.scss'],
 })
 export class FlagComponent implements OnInit{
   @Input() nationality = '';
+
   flag: any;
 
   get flagUrl(): string {

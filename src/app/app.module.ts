@@ -1,22 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './components/app.component';
+import { AppComponent } from './components/f1.component';
 import { FormsModule } from '@angular/forms';
 import { ChampionsService } from './services/champions.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FlagComponent } from './components/flag.component';
+import { FlagComponent } from './components/f1.flag.component';
+import { StoreModule } from '@ngrx/store';
+import { HeadingComponent } from './components/f1.heading.component';
+import { RaceComponent } from './components/f1.race.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ResultComponent } from './components/f1.result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlagComponent,
+    HeadingComponent,
+    RaceComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     NgbModule,
+    StoreModule.forRoot({}, {}),
+    FontAwesomeModule,
   ],
   providers: [ChampionsService],
   bootstrap: [AppComponent]

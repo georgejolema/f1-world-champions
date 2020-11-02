@@ -6,27 +6,25 @@ import { ChampionsService } from '../services/champions.service';
 
 @Component({
   selector: 'f1-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  templateUrl: './f1.component.html',
+  styleUrls: ['./f1.component.scss'],
 })
 export class AppComponent {
-  model: {[key: string]: number};
   data: Observable<RaceList>;
-  years: Array<number>;
+  seasons: Array<number>;
   isLoading = true;
 
-  showChampion(): void {
+  selectSeason(season: number): void {
     this.isLoading = true;
-    this.api.selectYear(this.model.season);
+    this.api.selectYear(season);
   }
 
   constructor(private api: ChampionsService) {
-   this.data = this.api.champions.pipe(tap((d) => {
-     console.log(d);
+   this.data = this.api.champions.pipe(tap(() => {
      this.isLoading = false;
    }));
 
-   this.years = this.api.seasons;
-   this.model = { season: this.api.seasons[0] };
+   this.seasons = this.api.seasons;
+
   }
 }

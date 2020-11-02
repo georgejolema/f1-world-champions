@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand navbar-nav mr-auto" href="#">
+    <img src="assets/logo.png" height="50px"/>
+  </a>
+  <div>
+    <form #f1Form="ngForm" class="form-inline my-2 my-lg-0">
+      <label class="my-2 pr-2">Select season</label>
+      <select class="form-control  mr-sm-2" name="season" [(ngModel)]="model.season" (change)="onSelectSeason()">
+        <option *ngFor="let season of seasons" [value]="season">{{season}}</option>
+      </select>
+    </form>
+  </div>
+</nav>

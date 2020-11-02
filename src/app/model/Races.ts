@@ -16,10 +16,16 @@ export interface Constructor {
 export interface Result {
   driver: Driver;
   constructor: Constructor;
+  laps: number;
+  number: number;
+  points: number;
+  time: string;
 }
 
 export interface Race {
   season: number;
+  country: string;
+  locality: string;
   round: number;
   time: string;
   date: string;
@@ -55,21 +61,35 @@ export class RaceList {
       };
     };
 
-    return {
-      limit: +limit,
-      offset: +offset,
-      total: +total,
-      items: RaceTable.Races.map((race: any) => ({
+    const buildResult = (result: any): Result => {
+      return {
+        driver: buildUser(result.Driver),
+        constructor: buildContructor(result.Constructor),
+        laps: +result.laps,
+        number: +result.number,
+        points: +result.points,
+        time: result.Time.time,
+      };
+    };
+
+    const buildRace = (race): Race => {
+      return {
         season: +race.season,
         round: +race.round,
         time: race.time,
         date: race.date,
         name: race.raceName,
-        winner: {
-          driver: buildUser(race.Results[0].Driver),
-          constructor: buildContructor(race.Results[0].Constructor),
-        }
-      })),
+        winner: buildResult(race.Results[0]),
+        country: race.Circuit.Location.country,
+        locality: race.Circuit.Location.locality,
+      };
+    };
+
+    return {
+      limit: +limit,
+      offset: +offset,
+      total: +total,
+      items: RaceTable.Races.map(buildRace),
     };
   }
 }
