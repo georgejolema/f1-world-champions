@@ -1,7 +1,18 @@
 <div class="card">
   <div class="card-body">
     <div class="d-flex mb-3">
-      <h5 class="card-title">{{race.name}}</h5>
+      <h5 class="card-title flex-grow-1">{{race.name}}</h5>
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-secondary" ngbDropdownToggle ngbTooltip="Reference">
+          <fa-icon [icon]="faEllipsis"></fa-icon>
+        </button>
+        <div ngbDropdownMenu>
+          <a [href]="race.webReference.race" target="_blank" ngbDropdownItem>Race</a>
+          <a [href]="race.webReference.circuit" target="_blank" ngbDropdownItem>Circuit</a>
+          <a [href]="race.webReference.winnerDriver" target="_blank" ngbDropdownItem>Winner ({{race.winner.driver.name}})</a>
+          <a [href]="race.webReference.winnerConstructor" target="_blank" ngbDropdownItem>Constructor ({{race.winner.constructor.name}})</a>
+        </div>
+      </div>
     </div>
 
     <div class="mr-4">

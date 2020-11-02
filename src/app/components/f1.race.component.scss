@@ -1,0 +1,6 @@
+.dropdown-toggle{
+  border-radius: 50%;
+  &::after {
+    display:none;
+  }
+}

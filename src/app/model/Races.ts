@@ -22,6 +22,13 @@ export interface Result {
   time: string;
 }
 
+export interface WebReference {
+  race: string;
+  circuit: string;
+  winnerDriver: string;
+  winnerConstructor: string;
+}
+
 export interface Race {
   season: number;
   country: string;
@@ -31,6 +38,7 @@ export interface Race {
   date: string;
   name: string;
   winner: Result;
+  webReference: WebReference;
 }
 
 export interface RaceList {
@@ -72,6 +80,15 @@ export class RaceList {
       };
     };
 
+    const buildReference = (race): WebReference => {
+      return {
+        circuit: race.Circuit.url,
+        race: race.url,
+        winnerConstructor: race.Results[0].Constructor.url,
+        winnerDriver: race.Results[0].Driver.url,
+      };
+    } ;
+
     const buildRace = (race): Race => {
       return {
         season: +race.season,
@@ -82,6 +99,7 @@ export class RaceList {
         winner: buildResult(race.Results[0]),
         country: race.Circuit.Location.country,
         locality: race.Circuit.Location.locality,
+        webReference: buildReference(race),
       };
     };
 
