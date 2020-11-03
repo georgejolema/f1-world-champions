@@ -11,7 +11,7 @@ describe('HeadingComponent', () => {
   let storeStub: any;
   beforeEach(() => {
     storeStub = {
-      dispatch: jasmine.createSpy()
+      dispatch: jasmine.createSpy(),
     };
 
     TestBed.configureTestingModule({
@@ -26,7 +26,7 @@ describe('HeadingComponent', () => {
           provide: F1_SEASON_LIST_TOKEN,
           useValue: [2001, 2002, 2003],
         },
-      ]
+      ],
     });
 
     fixture = TestBed.createComponent(HeadingComponent);
@@ -35,13 +35,17 @@ describe('HeadingComponent', () => {
   });
 
   it('should send the first season automatically to the dispatcher', () => {
-    expect(storeStub.dispatch).toHaveBeenCalledWith(loadRaces({selectedYear: 2001}));
+    expect(storeStub.dispatch).toHaveBeenCalledWith(
+      loadRaces({ selectedYear: 2001 })
+    );
   });
 
   it('should send the selected season to the dispatcher', () => {
     component.model.season = 2002;
     component.onSelectSeason();
 
-    expect(storeStub.dispatch).toHaveBeenCalledWith(loadRaces({selectedYear: 2002}));
+    expect(storeStub.dispatch).toHaveBeenCalledWith(
+      loadRaces({ selectedYear: 2002 })
+    );
   });
 });

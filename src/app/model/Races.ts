@@ -49,7 +49,7 @@ export interface RaceList {
 }
 
 export class RaceList {
-  static toHttpResponse({limit, offset, total, RaceTable}): RaceList {
+  static toHttpResponse({ limit, offset, total, RaceTable }): RaceList {
     const buildUser = (driver: any): Driver => {
       return {
         code: driver.code,
@@ -87,7 +87,7 @@ export class RaceList {
         winnerConstructor: race.Results[0].Constructor.url,
         winnerDriver: race.Results[0].Driver.url,
       };
-    } ;
+    };
 
     const buildRace = (race): Race => {
       return {

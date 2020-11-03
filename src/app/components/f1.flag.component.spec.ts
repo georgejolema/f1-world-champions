@@ -8,13 +8,11 @@ describe('FlagComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [FontAwesomeModule],
-      declarations: [FlagComponent]
+      declarations: [FlagComponent],
     });
 
     fixture = TestBed.createComponent(FlagComponent);
     component = fixture.componentInstance;
-
-
   });
 
   it('should create the flag url if the nationality is valid', () => {

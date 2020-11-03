@@ -6,14 +6,16 @@ import { DEFAULT_SEASON_LIST, F1_SEASON_LIST_TOKEN } from '../constants';
 
 @Component({
   selector: 'f1-heading',
-  templateUrl: 'f1.heading.component.html'
+  templateUrl: 'f1.heading.component.html',
 })
-export class HeadingComponent implements OnInit{
-  model: {[key: string]: number} = {};
+export class HeadingComponent implements OnInit {
+  model: { [key: string]: number } = {};
 
   onSelectSeason(): void {
-    this.store.dispatch(RaceActions.setLoadingIndicator({isLoading: true}));
-    this.store.dispatch(RaceActions.loadRaces({selectedYear: this.model.season}));
+    this.store.dispatch(RaceActions.setLoadingIndicator({ isLoading: true }));
+    this.store.dispatch(
+      RaceActions.loadRaces({ selectedYear: this.model.season })
+    );
   }
 
   ngOnInit(): void {
@@ -25,10 +27,10 @@ export class HeadingComponent implements OnInit{
     private store: Store<RaceState>,
     @Optional()
     @Inject(F1_SEASON_LIST_TOKEN)
-    public seasons: Array<number> | undefined,
+    public seasons: Array<number> | undefined
   ) {
-      if (!this.seasons) {
-        this.seasons = DEFAULT_SEASON_LIST;
-      }
+    if (!this.seasons) {
+      this.seasons = DEFAULT_SEASON_LIST;
     }
+  }
 }

@@ -14,7 +14,7 @@ export interface Flag {
   templateUrl: 'f1.flag.component.html',
   styleUrls: ['./f1.flag.component.scss'],
 })
-export class FlagComponent implements OnInit{
+export class FlagComponent implements OnInit {
   @Input() nationality = '';
   flag: Flag;
 

@@ -23,14 +23,17 @@ const initialState: RaceState = {
 
 export const racesReducer = createReducer<RaceState>(
   initialState,
-  on(RaceActions.loadRacesSuccess, (state, action): RaceState => {
-    return {
-      ...state,
-      error: '',
-      raceList: action.raceList,
-      isLoading: false,
-    };
-  }),
+  on(
+    RaceActions.loadRacesSuccess,
+    (state, action): RaceState => {
+      return {
+        ...state,
+        error: '',
+        raceList: action.raceList,
+        isLoading: false,
+      };
+    }
+  ),
   on(RaceActions.setLoadingIndicator, (state, action) => {
     return {
       ...state,
@@ -49,5 +52,5 @@ export const racesReducer = createReducer<RaceState>(
       error: action.error,
       isLoading: false,
     };
-  }),
+  })
 );

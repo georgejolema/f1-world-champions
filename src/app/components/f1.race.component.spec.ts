@@ -8,7 +8,7 @@ import { Race, Result } from '../model/Races';
 
 @Component({
   selector: 'f1-flag',
-  template: '<div></div>'
+  template: '<div></div>',
 })
 class FakeFlagComponent {
   @Input() nationality = '';
@@ -16,7 +16,7 @@ class FakeFlagComponent {
 
 @Component({
   selector: 'f1-result',
-  template: '<div></div>'
+  template: '<div></div>',
 })
 class FakeResultComponent {
   @Input() result: Result;
@@ -39,32 +39,33 @@ describe('RaceComponent', () => {
         id: 'hamilton',
         name: 'Lewis Hamilton',
         nationality: 'British',
-        permanentNumber: 44
+        permanentNumber: 44,
       },
       constructor: {
         id: 'mercedes',
         name: 'Mercedes',
-        nationality: 'German'
+        nationality: 'German',
       },
       laps: 58,
       number: 44,
       points: 25,
-      time: '1:31:54.067'
+      time: '1:31:54.067',
     },
     country: 'Australia',
     locality: 'Melbourne',
     webReference: {
       circuit: 'http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit',
       race: 'http://en.wikipedia.org/wiki/2015_Australian_Grand_Prix',
-      winnerConstructor: 'http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One',
-      winnerDriver: 'http://en.wikipedia.org/wiki/Lewis_Hamilton'
-    }
+      winnerConstructor:
+        'http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One',
+      winnerDriver: 'http://en.wikipedia.org/wiki/Lewis_Hamilton',
+    },
   };
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ BrowserModule, NgbModule, FontAwesomeModule],
-      declarations: [RaceComponent, FakeFlagComponent, FakeResultComponent]
+      imports: [BrowserModule, NgbModule, FontAwesomeModule],
+      declarations: [RaceComponent, FakeFlagComponent, FakeResultComponent],
     });
 
     fixture = TestBed.createComponent(RaceComponent);
@@ -95,7 +96,9 @@ describe('RaceComponent', () => {
   });
 
   it('should display the winner name', () => {
-    const result = fixture.debugElement.query(By.css('.f1-race__winner-button'));
+    const result = fixture.debugElement.query(
+      By.css('.f1-race__winner-button')
+    );
     expect(result.nativeElement.innerText).toBe('Lewis Hamilton');
   });
 
@@ -106,26 +109,36 @@ describe('RaceComponent', () => {
 
   it('should display the reference of the race', () => {
     const result = fixture.debugElement.queryAll(By.css('a'));
-    expect(result[0].nativeElement.href).toBe('http://en.wikipedia.org/wiki/2015_Australian_Grand_Prix');
+    expect(result[0].nativeElement.href).toBe(
+      'http://en.wikipedia.org/wiki/2015_Australian_Grand_Prix'
+    );
   });
 
   it('should display the reference of the circuit', () => {
     const result = fixture.debugElement.queryAll(By.css('a'));
-    expect(result[1].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit');
+    expect(result[1].nativeElement.href).toBe(
+      'http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit'
+    );
   });
 
   it('should display the reference of the constructor', () => {
     const result = fixture.debugElement.queryAll(By.css('a'));
-    expect(result[3].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One');
+    expect(result[3].nativeElement.href).toBe(
+      'http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One'
+    );
   });
 
   it('should display the reference of the driver', () => {
     const result = fixture.debugElement.queryAll(By.css('a'));
-    expect(result[2].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Lewis_Hamilton');
+    expect(result[2].nativeElement.href).toBe(
+      'http://en.wikipedia.org/wiki/Lewis_Hamilton'
+    );
   });
 
   it('should set isDisplayed to false if the button is pressed', () => {
-    const button = fixture.debugElement.query(By.css('.f1-race__winner-button'));
+    const button = fixture.debugElement.query(
+      By.css('.f1-race__winner-button')
+    );
     button.nativeElement.click();
 
     expect(component.isDisplayed).toBe(false);

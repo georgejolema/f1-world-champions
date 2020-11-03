@@ -5,10 +5,10 @@ const getStateFeatureState = createFeatureSelector<RaceState>('races');
 
 export const getRaces = createSelector(
   getStateFeatureState,
-  state => state.raceList,
+  (state) => state.raceList
 );
 
 export const isLoading = createSelector(
   getStateFeatureState,
-  state => state.isLoading,
+  (state) => state.isLoading
 );

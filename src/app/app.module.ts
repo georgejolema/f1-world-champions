@@ -14,6 +14,7 @@ import { ResultComponent } from './components/f1.result.component';
 import { EffectsModule } from '@ngrx/effects';
 import { racesReducer } from './state/app.state';
 import { RacesEffects } from './state/app.effects';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,11 @@ import { RacesEffects } from './state/app.effects';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    StoreModule.forRoot({races: racesReducer}),
+    StoreModule.forRoot({ races: racesReducer }),
     FontAwesomeModule,
     EffectsModule.forRoot([RacesEffects]),
   ],
-  providers: [RacesService],
-  bootstrap: [AppComponent]
+  providers: [RacesService, ...environment.mocks],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

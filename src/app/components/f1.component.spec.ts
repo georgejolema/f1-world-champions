@@ -16,13 +16,13 @@ describe('AppComponent', () => {
 
     TestBed.configureTestingModule({
       imports: [],
-      declarations: [
-        AppComponent
+      declarations: [AppComponent],
+      providers: [
+        {
+          provide: Store,
+          useValue: storeStub,
+        },
       ],
-      providers: [{
-        provide: Store,
-        useValue: storeStub,
-      }],
       schemas: [NO_ERRORS_SCHEMA],
     });
 

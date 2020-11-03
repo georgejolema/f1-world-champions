@@ -10,14 +10,16 @@ export class RacesEffects {
   constructor(private actions: Actions, private racesService: RacesService) {}
 
   loadRaces = createEffect(() => {
-    return this.actions
-      .pipe(
-        ofType(RaceActions.loadRaces),
-        mergeMap((action) => this.racesService.getRaces(action.selectedYear)
-          .pipe(
-            map((raceList) => RaceActions.loadRacesSuccess({ raceList })),
-            catchError(() => of(RaceActions.loadRacesError({error: 'Internal error'})))
-          ),
-      ));
+    return this.actions.pipe(
+      ofType(RaceActions.loadRaces),
+      mergeMap((action) =>
+        this.racesService.getRaces(action.selectedYear).pipe(
+          map((raceList) => RaceActions.loadRacesSuccess({ raceList })),
+          catchError(() =>
+            of(RaceActions.loadRacesError({ error: 'Internal error' }))
+          )
+        )
+      )
+    );
   });
 }
