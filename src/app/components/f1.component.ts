@@ -1,30 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { tap } from 'rxjs/operators';
 import { RaceList } from '../model/Races';
 import { ChampionsService } from '../services/champions.service';
+import { getRaces, isLoading } from '../state/app.selectors';
+import { RaceState } from '../state/app.state';
+import * as RaceActions from '../state/app.actions';
 
 @Component({
   selector: 'f1-root',
   templateUrl: './f1.component.html',
   styleUrls: ['./f1.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   data: Observable<RaceList>;
   seasons: Array<number>;
-  isLoading = true;
+  isLoading: Observable<boolean>;
 
   selectSeason(season: number): void {
-    this.isLoading = true;
-    this.api.selectYear(season);
+    this.store.dispatch(RaceActions.setLoadingIndicator({isLoading: true}));
+    this.store.dispatch(RaceActions.loadRaces({selectedYear: season}));
   }
 
-  constructor(private api: ChampionsService) {
-   this.data = this.api.champions.pipe(tap(() => {
-     this.isLoading = false;
-   }));
+  ngOnInit() {
+    this.selectSeason(this.seasons[0]);
+  }
 
-   this.seasons = this.api.seasons;
-
+  constructor(private api: ChampionsService, private store: Store<RaceState>) {
+    this.data = this.store.select(getRaces);
+    this.isLoading = this.store.select(isLoading);
+    this.seasons = this.api.seasons;
   }
 }

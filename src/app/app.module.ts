@@ -11,6 +11,9 @@ import { HeadingComponent } from './components/f1.heading.component';
 import { RaceComponent } from './components/f1.race.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ResultComponent } from './components/f1.result.component';
+import { EffectsModule } from '@ngrx/effects';
+import { racesReducer } from './state/app.state';
+import { RacesEffects } from './state/app.effects';
 
 @NgModule({
   declarations: [
@@ -25,8 +28,9 @@ import { ResultComponent } from './components/f1.result.component';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({races: racesReducer}),
     FontAwesomeModule,
+    EffectsModule.forRoot([RacesEffects]),
   ],
   providers: [ChampionsService],
   bootstrap: [AppComponent]
