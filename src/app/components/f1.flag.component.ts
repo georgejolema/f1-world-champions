@@ -3,10 +3,10 @@ import { FLAGS_CDN_URL } from '../constants';
 import countries from '../data/countries.json';
 
 export interface Flag {
-  cca2: string,
-  cca3?: string,
-  name?: string,
-  nationality?: string,
+  cca2: string;
+  cca3?: string;
+  name?: string;
+  nationality?: string;
 }
 
 @Component({

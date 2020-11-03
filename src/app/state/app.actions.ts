@@ -9,7 +9,7 @@ export const loadRaces = createAction(
 export const setLoadingIndicator = createAction(
   '[Races] set loading indicator',
   props<{isLoading: boolean}>(),
-)
+);
 
 export const loadRacesSuccess = createAction(
   '[Races] Load success',

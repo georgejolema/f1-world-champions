@@ -6,7 +6,7 @@ export interface RaceState {
   isLoading: boolean;
   raceList: RaceList;
   error: string;
-  selectedYear: number,
+  selectedYear: number;
 }
 
 const initialState: RaceState = {
@@ -19,7 +19,7 @@ const initialState: RaceState = {
     total: 0,
   },
   error: '',
-}
+};
 
 export const racesReducer = createReducer<RaceState>(
   initialState,
@@ -29,15 +29,25 @@ export const racesReducer = createReducer<RaceState>(
       error: '',
       raceList: action.raceList,
       isLoading: false,
-    }
+    };
   }),
   on(RaceActions.setLoadingIndicator, (state, action) => {
     return {
       ...state,
       isLoading: action.isLoading,
-    }
-  })
-)
-
-
-
+    };
+  }),
+  on(RaceActions.loadRacesError, (state, action) => {
+    return {
+      ...state,
+      raceList: {
+        items: [],
+        limit: 0,
+        offset: 0,
+        total: 0,
+      },
+      error: action.error,
+      isLoading: false,
+    };
+  }),
+);

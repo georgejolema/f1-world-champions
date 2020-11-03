@@ -22,7 +22,7 @@ export class HeadingComponent implements OnInit{
   }
 
   constructor(
-    private store: Store<RaceState>,  
+    private store: Store<RaceState>,
     @Optional()
     @Inject(F1_SEASON_LIST_TOKEN)
     public seasons: Array<number> | undefined,

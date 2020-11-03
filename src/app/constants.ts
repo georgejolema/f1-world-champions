@@ -11,4 +11,4 @@ export const FLAGS_CDN_URL = 'https://cdn.ipregistry.co/flags/emojitwo';
 export const icons: Icons = {
   trophy: faTrophy,
   ellipsis: faEllipsisH,
-}
+};

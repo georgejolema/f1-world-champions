@@ -1,3 +1,7 @@
+<ng-container  *ngIf="flagUrl; else textOnly">
+  <img [src]="flagUrl" [alt]="flag.name" class="f1-flag" />
+</ng-container>
 
-<img *ngIf="flagUrl" [src]="flagUrl" [alt]="flag.name" class="f1-flag" />
-<span *ngIf="!flagUrl">{{nationality}}</span>
+<ng-template #textOnly>
+  <span *ngIf="!flagUrl">{{nationality}}</span>
+</ng-template>

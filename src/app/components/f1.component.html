@@ -1,7 +1,7 @@
 <div class="container">
   <f1-heading></f1-heading>
   <ng-container *ngIf="data | async as raceList">
-    <ng-container *ngIf="!(isLoading | async); else loadingState">
+    <ng-container *ngIf="(isLoading | async) === false; else loadingState">
       <f1-race *ngFor="let race of raceList.items" [race]="race"></f1-race>
     </ng-container>
   </ng-container>

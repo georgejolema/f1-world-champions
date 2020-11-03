@@ -11,4 +11,4 @@ export const getRaces = createSelector(
 export const isLoading = createSelector(
   getStateFeatureState,
   state => state.isLoading,
-)
+);

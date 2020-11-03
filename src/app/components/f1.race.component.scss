@@ -8,8 +8,8 @@
 .f1-race {
   margin-bottom: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 
-       inset 0 -3em 3em rgba(0,0,0,0.1), 
+  box-shadow:
+       inset 0 -2em 2em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
   &__actions {
@@ -27,6 +27,7 @@
 
   &__details {
     margin-right: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   &__property {
