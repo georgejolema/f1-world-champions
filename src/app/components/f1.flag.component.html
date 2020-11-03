@@ -1,1 +1,3 @@
-<img [src]="flagUrl" [alt]="flag.name" class="f1-flag" />
+
+<img *ngIf="flagUrl" [src]="flagUrl" [alt]="flag.name" class="f1-flag" />
+<span *ngIf="!flagUrl">{{nationality}}</span>

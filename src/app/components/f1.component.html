@@ -1,13 +1,11 @@
 <div class="container">
-  <f1-heading [seasons]="seasons" (selectSeason)="selectSeason($event)"></f1-heading>
-
+  <f1-heading></f1-heading>
   <ng-container *ngIf="data | async as raceList">
     <ng-container *ngIf="!(isLoading | async); else loadingState">
       <f1-race *ngFor="let race of raceList.items" [race]="race"></f1-race>
     </ng-container>
   </ng-container>
 </div>
-
 <ng-template #loadingState>
   <div class="f1-loading-indicator">
     <div class="spinner-border" role="status">
@@ -15,4 +13,3 @@
     </div>
   </div>
 </ng-template>
-
