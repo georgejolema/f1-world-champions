@@ -10,5 +10,9 @@ import { Race } from '../model/Races';
 export class RaceComponent {
   @Input() race: Race | undefined;
   icons = icons;
-  showDetails = true;
+  isDisplayed = true;
+
+  toogleDisplay(): void {
+    this.isDisplayed = !this.isDisplayed;
+  }
 }

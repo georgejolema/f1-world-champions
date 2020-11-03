@@ -98,4 +98,36 @@ describe('RaceComponent', () => {
     const result = fixture.debugElement.query(By.css('.f1-race__winner-button'));
     expect(result.nativeElement.innerText).toBe('Lewis Hamilton');
   });
+
+  it('should display the winner name', () => {
+    const result = fixture.debugElement.query(By.css('.f1-race__title'));
+    expect(result.nativeElement.innerText).toBe('Australian Grand Prix');
+  });
+
+  it('should display the reference of the race', () => {
+    const result = fixture.debugElement.queryAll(By.css('a'));
+    expect(result[0].nativeElement.href).toBe('http://en.wikipedia.org/wiki/2015_Australian_Grand_Prix');
+  });
+
+  it('should display the reference of the circuit', () => {
+    const result = fixture.debugElement.queryAll(By.css('a'));
+    expect(result[1].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit');
+  });
+
+  it('should display the reference of the constructor', () => {
+    const result = fixture.debugElement.queryAll(By.css('a'));
+    expect(result[3].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One');
+  });
+
+  it('should display the reference of the driver', () => {
+    const result = fixture.debugElement.queryAll(By.css('a'));
+    expect(result[2].nativeElement.href).toBe('http://en.wikipedia.org/wiki/Lewis_Hamilton');
+  });
+
+  it('should set isDisplayed to false if the button is pressed', () => {
+    const button = fixture.debugElement.query(By.css('.f1-race__winner-button'));
+    button.nativeElement.click();
+
+    expect(component.isDisplayed).toBe(false);
+  });
 });

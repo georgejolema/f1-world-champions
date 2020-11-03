@@ -35,7 +35,7 @@
     </div>
 
     <div>
-      <button class="btn btn-outline-primary f1-race__winner-button" (click)="showDetails=!showDetails">
+      <button class="btn btn-outline-primary f1-race__winner-button" (click)="toogleDisplay()">
         <span>
           <f1-flag [nationality]="race.winner.driver.nationality"></f1-flag>
         </span>
@@ -45,7 +45,7 @@
         </span>
       </button>
 
-      <div [ngbCollapse]="showDetails">
+      <div [ngbCollapse]="isDisplayed">
         <f1-result [result]="race.winner"></f1-result>
       </div>
     </div>
