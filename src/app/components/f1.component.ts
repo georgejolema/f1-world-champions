@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { RaceList } from '../model/Races';
-import { ChampionsService } from '../services/champions.service';
+import { RacesService } from '../services/races.service';
 import { getRaces, isLoading } from '../state/app.selectors';
 import { RaceState } from '../state/app.state';
 import * as RaceActions from '../state/app.actions';
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
     this.selectSeason(this.seasons[0]);
   }
 
-  constructor(private api: ChampionsService, private store: Store<RaceState>) {
+  constructor(private api: RacesService, private store: Store<RaceState>) {
     this.data = this.store.select(getRaces);
     this.isLoading = this.store.select(isLoading);
     this.seasons = this.api.seasons;

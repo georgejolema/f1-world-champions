@@ -1,12 +1,12 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { map, mergeMap } from 'rxjs/operators';
-import { ChampionsService } from '../services/champions.service';
+import { RacesService } from '../services/races.service';
 import * as RaceActions from './app.actions';
 
 @Injectable()
 export class RacesEffects {
-  constructor(private actions: Actions, private racesService: ChampionsService) {}
+  constructor(private actions: Actions, private racesService: RacesService) {}
 
   loadRaces = createEffect(() => {
     return this.actions

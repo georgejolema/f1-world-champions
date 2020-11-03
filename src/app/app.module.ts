@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/f1.component';
 import { FormsModule } from '@angular/forms';
-import { ChampionsService } from './services/champions.service';
+import { RacesService } from './services/races.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlagComponent } from './components/f1.flag.component';
@@ -32,7 +32,7 @@ import { RacesEffects } from './state/app.effects';
     FontAwesomeModule,
     EffectsModule.forRoot([RacesEffects]),
   ],
-  providers: [ChampionsService],
+  providers: [RacesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
