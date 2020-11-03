@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { faEllipsisH, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { icons } from '../constants';
 import { Race } from '../model/Races';
 
 @Component({
@@ -9,7 +9,6 @@ import { Race } from '../model/Races';
 })
 export class RaceComponent {
   @Input() race: Race | undefined;
-  faTrophy = faTrophy;
-  faEllipsis = faEllipsisH;
+  icons = icons;
   showDetails = true;
 }

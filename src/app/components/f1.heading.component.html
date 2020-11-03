@@ -4,7 +4,7 @@
   </a>
   <div>
     <form #f1Form="ngForm" class="form-inline my-2 my-lg-0">
-      <label class="my-2 pr-2">Select season</label>
+      <strong class="my-2 pr-2">Select season</strong>
       <select class="form-control  mr-sm-2" name="season" [(ngModel)]="model.season" (change)="onSelectSeason()">
         <option *ngFor="let season of seasons" [value]="season">{{season}}</option>
       </select>

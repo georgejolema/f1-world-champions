@@ -1,10 +1,10 @@
-<div class="card">
+<div class="card f1-race">
   <div class="card-body">
-    <div class="d-flex mb-3">
-      <h5 class="card-title flex-grow-1">{{race.name}}</h5>
-      <div ngbDropdown class="d-inline-block">
+    <div class="f1-race__actions">
+      <h5 class="card-title f1-race__title">{{race.name}}</h5>
+      <div ngbDropdown class="f1-race__dropdown-list">
         <button class="btn btn-outline-secondary" ngbDropdownToggle ngbTooltip="Reference">
-          <fa-icon [icon]="faEllipsis"></fa-icon>
+          <fa-icon [icon]="icons.ellipsis"></fa-icon>
         </button>
         <div ngbDropdownMenu>
           <a [href]="race.webReference.race" target="_blank" ngbDropdownItem>Race</a>
@@ -15,32 +15,39 @@
       </div>
     </div>
 
-    <div class="mr-4">
+    <div class="f1-race__details">
       <div>
-        <label>Country:</label>
-        <span class="font-weight-bold ml-1">{{race.country}}</span>
+        <span>Country:</span>
+        <span class="f1-race__property">{{race.country}}</span>
       </div>
       <div>
-        <label>Locality:</label>
-        <span class="font-weight-bold ml-1">{{race.locality}}</span>
+        <span>Locality:</span>
+        <span class="f1-race__property">{{race.locality}}</span>
       </div>
       <div>
-        <label>Date:</label>
-        <span class="font-weight-bold ml-1">{{race.date}}</span>
+        <span>Date:</span>
+        <span class="f1-race__property">{{race.date}}</span>
       </div>
       <div>
-        <label>Round:</label>
-        <span class="font-weight-bold ml-1">{{race.round}}</span>
+        <span>Round:</span>
+        <span class="f1-race__property">{{race.round}}</span>
       </div>
     </div>
 
-    <button class="btn btn-outline-primary" (click)="showDetails=!showDetails">
-      <f1-flag [nationality]="race.winner.driver.nationality"></f1-flag>
-      <span class="px-1">{{race.winner.driver.name}}</span>
-      <fa-icon [icon]="faTrophy"></fa-icon>
-    </button>
-    <div [ngbCollapse]="showDetails" class="p-3">
-      <f1-result [result]="race.winner"></f1-result>
+    <div>
+      <button class="btn btn-outline-primary f1-race__winner-button" (click)="showDetails=!showDetails">
+        <span>
+          <f1-flag [nationality]="race.winner.driver.nationality"></f1-flag>
+        </span>
+        <span>{{race.winner.driver.name}}</span>
+        <span>
+          <fa-icon [icon]="icons.trophy"></fa-icon>
+        </span>
+      </button>
+
+      <div [ngbCollapse]="showDetails">
+        <f1-result [result]="race.winner"></f1-result>
+      </div>
     </div>
   </div>
 </div>

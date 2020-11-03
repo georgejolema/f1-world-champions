@@ -4,3 +4,33 @@
     display:none;
   }
 }
+
+.f1-race {
+  &__actions {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  &__dropdown-list {
+    display: inline-block;
+  }
+
+  &__details {
+    margin-right: 1.5rem;
+  }
+
+  &__property {
+    font-weight: 700;
+    padding-left: .25rem;
+  }
+
+  &__winner-button {
+    &>span:not(:first-of-type) {
+      padding-left: .25rem;
+    }
+  }
+}
