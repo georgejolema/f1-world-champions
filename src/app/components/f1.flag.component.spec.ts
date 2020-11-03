@@ -22,7 +22,7 @@ describe('FlagComponent', () => {
     fixture.detectChanges();
 
     const result = component.flagUrl;
-    expect(result).toBe('https://cdn.ipregistry.co/flags/emojitwo/de.svg')
+    expect(result).toBe('https://cdn.ipregistry.co/flags/emojitwo/de.svg');
   });
 
   it('should return undefined if the nationality is invalid', () => {
