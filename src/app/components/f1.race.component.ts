@@ -9,6 +9,8 @@ import { Race } from '../model/Races';
 })
 export class RaceComponent {
   @Input() race: Race | undefined;
+  @Input() champion: string | undefined;
+
   icons = icons;
   isDisplayed = true;
 

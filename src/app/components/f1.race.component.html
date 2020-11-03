@@ -40,7 +40,7 @@
           <f1-flag [nationality]="race.winner.driver.nationality"></f1-flag>
         </span>
         <span>{{race.winner.driver.name}}</span>
-        <span>
+        <span *ngIf="champion === race.winner.driver.name">
           <fa-icon [icon]="icons.trophy"></fa-icon>
         </span>
       </button>
